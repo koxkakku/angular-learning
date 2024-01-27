@@ -1,0 +1,11 @@
+<!--string Interpolation-->
+<!--any expression that evaluates to a string or can be converted to a string can be put in {{ }}-->
+<!--a variable/method declared in ts can be used in {{}} if it is string/returns a string/can be converted to a string -->
+<!--ngStryle is an attribute directive and can be used just like an attribute-->
+<p>{{'server works!'}}</p>
+<p 
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus==='online'}">server with id {{ serverId}} is {{ serverStatus}}.</p>
+<p [ngStyle]="{backgroundColor: getColor()}">server with id {{ getServerId()}} is {{ getServerStatus()}}.</p>
+
+
